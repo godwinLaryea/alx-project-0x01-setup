@@ -27,7 +27,7 @@ const UserCard: React.FC<UserProps> = ({
           <p>
             Geo Location. Latitude:{address.geo.lat}, Longitude:
             {address.geo.lng}
-          </p>i
+          </p>
         </div>
       </div>
 
