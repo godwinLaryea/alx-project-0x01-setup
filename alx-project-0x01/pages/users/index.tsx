@@ -21,7 +21,7 @@ const Users: React.FC<UserProps[]> = ({ posts }: any) => {
         <div className="flex justify-between">
           <h1 className=" text-2xl font-semibold">User Content</h1>
           <button onClick={() => setModalOpen(true)}
-            className="bg-blue-700 px-4 py-2 rounded-full text-white">Add Post</button>
+            className="bg-blue-700 px-4 py-2 rounded-full text-white">Add User</button>
         </div>
         <div className="grid grid-cols-3 gap-2 ">
           {
