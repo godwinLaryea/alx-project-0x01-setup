@@ -94,6 +94,48 @@ const UserModal: React.FC<UserModalProps> = ({ onClose, onSubmit }) => {
             />
           </div>
           <div className="mb-4">
+            <label htmlFor="companyCatchPhrase" className="block text-gray-700 font-medium mb-2">
+              Company's CatchPhrase
+            </label>
+            <input
+              type="text"
+              id="companyCatchPhrase"
+              name="companyCatchPhrase"
+              value={user.company.catchPhrase}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Enter company's catch phrase"
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="companyBS" className="block text-gray-700 font-medium mb-2">
+              Company BS
+            </label>
+            <input
+              type="text"
+              id="companyBS"
+              name="companyBS"
+              value={user.company.bs}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Enter company bs"
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="city" className="block text-gray-700 font-medium mb-2">
+              City
+            </label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              value={user.address.city}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Enter company location"
+            />
+          </div>
+          <div className="mb-4">
             <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
               Email
             </label>
@@ -105,6 +147,20 @@ const UserModal: React.FC<UserModalProps> = ({ onClose, onSubmit }) => {
               onChange={handleChange}
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Enter user email"
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="website" className="block text-gray-700 font-medium mb-2">
+              Website
+            </label>
+            <input
+              type="text"
+              id="website"
+              name="company.website"
+              value={user.website}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Enter user website"
             />
           </div>
           <div className="flex justify-between items-center">
